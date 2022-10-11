@@ -40,3 +40,23 @@ for i in txt:
             posicao = posicao + 1
         else:
             alphabet.append(i.rstrip('\n'))
+    # transitions
+    else:
+        aux = i[i.find(":")+1:i.find(">")]
+        if aux in dfa[i[0:i.find(":")]].keys():
+            palavra = i[i.find(">")+1:].rstrip('\n')
+            if "," in palavra:
+                for m in palavra:
+                    dfa[i[0:i.find(":")]][i[i.find(":")+1:i.find(">")]].append(m)
+            else:
+                dfa[i[0:i.find(":")]][i[i.find(":")+1:i.find(">")]].append(palavra)
+            deterministico = False
+            subConjuntos += 1  
+        else:
+            palavra = i[i.find(">")+1:].rstrip('\n')
+            if "," in palavra:
+                dfa[i[0:i.find(":")]][i[i.find(":")+1:i.find(">")]]= palavra.split(",")
+                deterministico = False
+            else:
+                dfa[i[0:i.find(":")]][i[i.find(":")+1:i.find(">")]]=[palavra]
+            subConjuntos += 1

@@ -7,11 +7,14 @@ O trabalho prático consiste na implementação de um programa que permita cadas
 Caso cadastre um não-determinístico, deve-se aplicar a transformação para o determinístico e fazer o teste da palavra usando o autômato determinístico (neste caso, apresente o autômato determinístico antes de testar a palavra).
 
 **Formato do arquivo de texto lido para construção do autômato**
+
+```
 #states
 #initial
 #accepting
 #alphabet
 #transitions
+```
 
 ### 📋 Funcionamento
 
@@ -25,9 +28,11 @@ Colocar o programa para funcionar e fazer os testes de possíveis palavras.
 Mudanças: Começamos a fazer o trabalho e quando estavamos em sua reta final, percebemos que não atendia um dos requisitos, então, refizemos e estamos adicionando as fases do trabalho novamente.
 
 A fazer:
--Transições: em produção atualmente
--Aceitação
+
+```
+-Verificação de palavra
 -Tranformação
+```
 
 ## 🛠️ Construído com
 
