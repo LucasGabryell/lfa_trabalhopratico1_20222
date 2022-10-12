@@ -30,7 +30,6 @@ Mudanças: Começamos a fazer o trabalho e quando estavamos em sua reta final, p
 A fazer:
 
 ```
--Verificação de palavra
 -Tranformação
 ```
 
